@@ -1,8 +1,8 @@
 ## Demo of python src-layout with Docker
 
-1. To generate lock file: 
+1. To generate lock file (you need `pip-tools` installed):
 ```shell
-pip-compile --output-file=requirements.lock  --generate-hashes  --index-url=https://pypi.org/simple pyproject.toml
+pip-compile --output-file=requirements.lock --generate-hashes --index-url=https://pypi.org/simple pyproject.toml
 ```
 
 2. To build container:
