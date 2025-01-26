@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=66.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[project]
+name = "myapp"
+version = "0.1"
+
+dependencies = [
+    'adaptix',
+]
+
+[project.scripts]
+myapp = "myapp.cli:main"
